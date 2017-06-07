@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Visualise All Needless Graphical Transformations </title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div class="header">
+      <span class="title"> vangt </span>
+    </div>
+    <div class="graph">
+      <canvas id="viz"></canvas>
+    </div>
+    <div class="matrix">
+      <h2> Edit your matrix </h2>
+      <table class="mtable" id="mtable">
+        <tr>
+          <td> <input class="mat" id="m11" type="text" value="1"> </td>
+          <td> <input class="mat" id="m12" type="text" value="0"> </td>
+          <td> <input class="mat" id="m13" type="text" value="0"> </td>
+        </tr>
+        <tr>
+          <td> <input class="mat" id="m21" type="text" value="0"> </td>
+          <td> <input class="mat" id="m22" type="text" value="1"> </td>
+          <td> <input class="mat" id="m23" type="text" value="0"> </td>
+        </tr>
+        <tr>
+          <td> <input class="mat" id="m31" type="text" value="0"> </td>
+          <td> <input class="mat" id="m32" type="text" value="0"> </td>
+          <td> <input class="mat" id="m33" type="text" value="1"> </td>
+        </tr>
+      </table>
+      <button onclick="loadIdentity(); refresh()">
+        Load identity matrix
+      </button>
+    </div>
+  </body>
+</html>
